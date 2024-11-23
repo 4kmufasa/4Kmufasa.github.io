@@ -1,0 +1,185 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>旅行指南：旧城 | 换乘站</title>
+<link rel="shortcut icon" href="https://4Kmufasa.github.io/favicon.ico?v=1732366112198">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://4Kmufasa.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="旅行指南：旧城 | 换乘站 - Atom Feed" href="https://4Kmufasa.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="交通：睡前半小时/适度波本威士忌/休息日平静的下午/梦/路过熟悉街道
+描述：每个人对旧城的描述都不太一样
+有人害怕旧城，也有人总想回到旧城
+别担心，这很正常
+经历过什么，旧城就是什么
+但是看见旧城，就成天使
+希望这份指南可以帮助到你
+——愚..." />
+    <meta name="keywords" content="旧城天使" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://4Kmufasa.github.io">
+  <img class="avatar" src="https://4Kmufasa.github.io/images/avatar.png?v=1732366112198" alt="">
+  </a>
+  <h1 class="site-title">
+    换乘站
+  </h1>
+  <p class="site-description">
+    “直到重遇她所承重”
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              旅行指南：旧城
+            </h2>
+            <div class="post-info">
+              <span>
+                2024-11-23
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="https://4Kmufasa.github.io/tag/foj4KtIS_6/" class="post-tag">
+                  # 旧城天使
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://4Kmufasa.github.io/post-images/lu-xing-zhi-nan-jiu-cheng.png" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>交通：睡前半小时/适度波本威士忌/休息日平静的下午/梦/路过熟悉街道<br>
+描述：每个人对旧城的描述都不太一样<br>
+有人害怕旧城，也有人总想回到旧城<br>
+别担心，这很正常<br>
+经历过什么，旧城就是什么<br>
+但是看见旧城，就成天使<br>
+希望这份指南可以帮助到你<br>
+——愚者月亮</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://4Kmufasa.github.io/post/shi-yue-xiao-juan-yu-yue-guang-sui-pian/">
+              <h3 class="post-title">
+                十月胶卷与月光碎片
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://4Kmufasa.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
